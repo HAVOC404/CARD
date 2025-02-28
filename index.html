@@ -30,7 +30,7 @@
             top: 0;
             left: 0;
             z-index: 1;
-            pointer-events: none;
+            pointer-events: none; /* Impede que o fundo bloqueie interações */
             color: rgba(212, 212, 212, 0.8);
             text-shadow: 0 0 5px #0f0, 0 0 10px #0f0, 0 0 15px #0f0;
             animation: neonGlow 1.5s infinite alternate;
@@ -53,7 +53,7 @@
             border-radius: 10px;
             text-align: center;
             box-shadow: 0 0 20px #ff007f;
-            z-index: 2;
+            z-index: 3; /* Garante que o card fique acima do fundo */
             transition: box-shadow 0.3s ease-in-out;
             cursor: pointer;
             width: 400px;
