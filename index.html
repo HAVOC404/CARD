@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H4VØC_404 Signature</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+        body {
+            background: radial-gradient(circle, rgba(26, 26, 46, 1) 10%, black 90%);
+            color: #ff007f;
+            font-family: 'Share Tech Mono', monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .code-background {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            font-size: 1.2rem;
+            white-space: pre;
+            overflow: hidden;
+            font-family: 'Courier New', Courier, monospace;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            pointer-events: none;
+            color: rgba(212, 212, 212, 0.8);
+            text-shadow: 0 0 5px #0f0, 0 0 10px #0f0, 0 0 15px #0f0;
+            animation: neonGlow 1.5s infinite alternate;
+            background: #1e1e1e;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        
+        @keyframes neonGlow {
+            0% { color: rgba(212, 212, 212, 0.8); text-shadow: 0 0 5px #0f0, 0 0 10px #0f0; }
+            50% { color: rgba(86, 156, 214, 0.8); text-shadow: 0 0 5px #0af, 0 0 10px #0af; }
+            100% { color: rgba(212, 212, 212, 0.8); text-shadow: 0 0 5px #f0f, 0 0 10px #f0f; }
+        }
+        
+        .card {
+            position: relative;
+            background: rgba(26, 26, 46, 0.9);
+            border: 2px solid #ff007f;
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 20px #ff007f;
+            z-index: 2;
+            transition: box-shadow 0.3s ease-in-out;
+            cursor: pointer;
+            width: 400px;
+        }
+        .card:hover {
+            box-shadow: 0 0 30px #ff007f;
+        }
+        .glitch {
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-shadow: 0 0 5px #ff007f, 0 0 10px #ff007f, 0 0 15px #ff007f;
+            animation: glitch 0.2s infinite alternate;
+        }
+        @keyframes glitch {
+            0% { transform: translateX(2px); }
+            50% { transform: translateX(-2px); }
+            100% { transform: translateX(2px); }
+        }
+        .social-icons {
+            margin-top: 20px;
+        }
+        .social-icons a {
+            margin: 0 15px;
+            color: #ff007f;
+            text-decoration: none;
+            font-size: 2.5rem;
+            transition: color 0.3s ease;
+        }
+        .social-icons a:hover {
+            color: #00ffff;
+        }
+        .social-icons a.udemy {
+            font-size: 2.5rem;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            color: #ff007f;
+            display: inline-block;
+            transition: color 0.3s ease;
+        }
+        .social-icons a.udemy:hover {
+            color: #00ffff;
+        }
+        .second-code {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 1.2rem;
+            font-family: 'Courier New', Courier, monospace;
+            color: rgba(212, 212, 212, 0.8);
+            text-shadow: 0 0 5px #0f0, 0 0 10px #0f0, 0 0 15px #0f0;
+            animation: neonGlow 1.5s infinite alternate;
+            z-index: 2;
+            text-align: center;
+        }
+        .second-code span {
+            color: #569cd6;
+        }
+        .second-code .error {
+            color: #f44747;
+        }
+
+        /* Estilo para a imagem redonda */
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #ff007f;
+            margin-bottom: 20px;
+            object-fit: cover;
+            box-shadow: 0 0 10px #ff007f;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let audio = new Audio('https://www.myinstants.com/media/sounds/creepy-glitch.mp3');
+            audio.preload = "auto";
+            document.querySelector(".card").addEventListener("click", function() {
+                audio.currentTime = 0;
+                audio.play().catch(error => console.error("Erro ao reproduzir áudio:", error));
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="code-background">
+        <span style="color: #569cd6;">function</span> <span style="color: #dcdcaa;">checkSecurity</span>() {
+            <span style="color: #9cdcfe;">console</span>.<span style="color: #dcdcaa;">log</span>(<span style="color: #ce9178;">"Verificando status de segurança..."</span>);
+            <span style="color: #569cd6;">throw</span> <span style="color: #ce9178;">"Erro 404: Sua segurança não foi encontrada."</span>;
+        }
+        checkSecurity();
+    </div>
+    <div class="card">
+        <!-- Adicione a imagem aqui -->
+        <img src="./fotos/Captura de ecrã 2025-02-15 002807.png" alt="Profile Image" class="profile-image">
+        <h1 class="glitch">H4VØC_404</h1>
+        <div class="social-icons">
+            <a href="h4v0c.404p@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://www.instagram.com/h4voc_404/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@h4v0c_guardian" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+           <a href="https://x.com/home?lang=en" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+    </div>
+    <div class="second-code">
+        <span style="color: #569cd6;">function</span> <span style="color: #dcdcaa;">protectChildren</span>() {
+            <span style="color: #9cdcfe;">console</span>.<span style="color: #dcdcaa;">log</span>(<span style="color: #ce9178;">"H4VØC_404: O Guardião das Crianças está online."</span>);
+            <span style="color: #9cdcfe;">console</span>.<span style="color: #dcdcaa;">log</span>(<span style="color: #ce9178;">"Nenhuma criança será deixada para trás. Denuncie!"</span>);
+        }
+        protectChildren();
+    </div>
+</body>
+</html>
